@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import joblib
 import pandas as pd
 from flask_cors import CORS  # Import CORS
@@ -25,6 +25,10 @@ required_columns = [
     'StreamingMovies_No internet service', 'StreamingMovies_Yes',
     'PaperlessBilling_Yes'
 ]
+
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
