@@ -26,7 +26,7 @@ Flask==3.0.3
 Flask-Cors==4.0.1
 fonttools==4.53.0
 fqdn==1.5.1
-gunicorn
+gunicorn==20.1.0
 h11==0.14.0
 httpcore==1.0.5
 httpx==0.27.0
