@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Churn Prediction</h1>
+        <form id="prediction-form">
+            <label for="SeniorCitizen">Senior Citizen:</label>
+            <select id="SeniorCitizen" name="SeniorCitizen" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+            
+            <label for="tenure">Tenure (months):</label>
+            <input type="number" id="tenure" name="tenure" required>
+            
+            <label for="MonthlyCharges">Monthly Charges:</label>
+            <input type="number" step="0.01" id="MonthlyCharges" name="MonthlyCharges" required>
+            
+            <label for="TotalCharges">Total Charges:</label>
+            <input type="number" step="0.01" id="TotalCharges" name="TotalCharges" required>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+            </select>
+            
+            <label for="Partner_Yes">Partner:</label>
+            <select id="Partner_Yes" name="Partner_Yes" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+            
+            <label for="Dependents_Yes">Dependents:</label>
+            <select id="Dependents_Yes" name="Dependents_Yes" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+            
+            <label for="Contract">Contract:</label>
+            <select id="Contract" name="Contract" required>
+                <option value="0_0">Month-to-month</option>
+                <option value="1_0">One year</option>
+                <option value="0_1">Two year</option>
+            </select>
+            
+            <label for="PaymentMethod">Payment Method:</label>
+            <select id="PaymentMethod" name="PaymentMethod" required>
+                <option value="0_0_0">Electronic check</option>
+                <option value="0_1_0">Mailed check</option>
+                <option value="1_0_0">Credit card (automatic)</option>
+            </select>
+            
+            <label for="PhoneService">Phone Service:</label>
+            <select id="PhoneService" name="PhoneService" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+            
+            <label for="MultipleLines">Multiple Lines:</label>
+            <select id="MultipleLines" name="MultipleLines" required>
+                <option value="0_0">No phone service</option>
+                <option value="1_0">Yes</option>
+                <option value="0_1">No</option>
+            </select>
+            
+            <label for="InternetService">Internet Service:</label>
+            <select id="InternetService" name="InternetService" required>
+                <option value="0_0">No</option>
+                <option value="1_0">Fiber optic</option>
+                <option value="0_1">DSL</option>
+            </select>
+            
+            <label for="OnlineSecurity">Online Security:</label>
+            <select id="OnlineSecurity" name="OnlineSecurity" required>
+                <option value="0_0">No internet service</option>
+                <option value="0_1">No</option>
+                <option value="1_0">Yes</option>
+            </select>
+            
+            <label for="OnlineBackup">Online Backup:</label>
+            <select id="OnlineBackup" name="OnlineBackup" required>
+                <option value="0_0">No internet service</option>
+                <option value="0_1">No</option>
+                <option value="1_0">Yes</option>
+            </select>
+            
+            <label for="DeviceProtection">Device Protection:</label>
+            <select id="DeviceProtection" name="DeviceProtection" required>
+                <option value="0_0">No internet service</option>
+                <option value="0_1">No</option>
+                <option value="1_0">Yes</option>
+            </select>
+            
+            <label for="TechSupport">Tech Support:</label>
+            <select id="TechSupport" name="TechSupport" required>
+                <option value="0_0">No internet service</option>
+                <option value="0_1">No</option>
+                <option value="1_0">Yes</option>
+            </select>
+            
+            <label for="StreamingTV">Streaming TV:</label>
+            <select id="StreamingTV" name="StreamingTV" required>
+                <option value="0_0">No internet service</option>
+                <option value="0_1">No</option>
+                <option value="1_0">Yes</option>
+            </select>
+            
+            <label for="StreamingMovies">Streaming Movies:</label>
+            <select id="StreamingMovies" name="StreamingMovies" required>
+                <option value="0_0">No internet service</option>
+                <option value="0_1">No</option>
+                <option value="1_0">Yes</option>
+            </select>
+            
+            <label for="PaperlessBilling">Paperless Billing:</label>
+            <select id="PaperlessBilling" name="PaperlessBilling" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+            
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result">
+            <p id="prediction-result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
