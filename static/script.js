@@ -38,7 +38,14 @@ document.getElementById('prediction-form').addEventListener('submit', function(e
         if (data.error) {
             throw new Error(data.error);
         }
-        document.getElementById('prediction-result').innerText = data.prediction;
+        const resultElement = document.getElementById('prediction-result');
+        if (data.prediction === 'churn') {
+            resultElement.innerText = 'Customer is likely to churn!';
+            resultElement.style.color = 'red';
+        } else {
+            resultElement.innerText = 'Customer is not likely to churn.';
+            resultElement.style.color = 'green';
+        }
     })
     .catch(error => {
         console.error('Error:', error);
