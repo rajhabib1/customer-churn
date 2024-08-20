@@ -1,4 +1,4 @@
-fetch('https://customer-churn-51ou.onrender.com', {
+fetch('https://customer-churn-51ou.onrender.com/predict', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
