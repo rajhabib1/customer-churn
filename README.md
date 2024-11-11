@@ -48,7 +48,7 @@ The Random Forest Classifier was used for prediction, and the model's performanc
 ### ROC Curve
 ![ROC Curve](notebooks/images/ROC.png)
 ## Deployment
-The application is deployed and publicly accessible at the following link: 
+The application is deployed and publicly accessible at the following link: [Customer Churn Prediction Application](https://customer-churn-51ou.onrender.com/)
 ## How to use
 1. Enter customer details in the provided form on the homepage.
 2. Click the "Predict" button to get a prediction on whether the customer is likely to churn.
