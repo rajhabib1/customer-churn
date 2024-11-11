@@ -35,12 +35,18 @@ This project is a full-stack web application designed to predict customer churn 
    Open your browser and navigate to http://localhost:5000.
 ## Exploratory Data Analysis (EDA)
 Key insights from the EDA include the impact of internet service, monthly charges, and security features on customer churn. Below are some visualizations:
-`ChurnInternet.png`
-`ChurnMonthlyCharges.png`
-`ChurnSecurity.png`
+### 1. Churn by Internet Service
+![Churn by Internet Service](notebooks/images/ChurnInternet.png)
+
+### 2. Churn by Monthly Charges
+![Churn by Monthly Charges](notebooks/images/ChurnMonthlyCharges.png)
+
+### 3. Churn with Online Security
+![Churn with Online Security](notebooks/images/ChurnSecurity.png)
 ## Model Performance 
 The Random Forest Classifier was used for prediction, and the model's performance is summarized by the ROC curve below:
-`ROC.png`
+### ROC Curve
+![ROC Curve](notebooks/images/ROC.png)
 ## Deployment
 The application is deployed and publicly accessible at the following link: 
 ## How to use
