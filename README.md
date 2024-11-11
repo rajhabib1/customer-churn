@@ -38,3 +38,16 @@ Key insights from the EDA include the impact of internet service, monthly charge
 `ChurnInternet.png`
 `ChurnMonthlyCharges.png`
 `ChurnSecurity.png`
+## Model Performance 
+The Random Forest Classifier was used for prediction, and the model's performance is summarized by the ROC curve below:
+`ROC.png`
+## Deployment
+The application is deployed and publicly accessible at the following link: 
+## How to use
+1. Enter customer details in the provided form on the homepage.
+2. Click the "Predict" button to get a prediction on whether the customer is likely to churn.
+3. View the prediction result and consider interventions for customers predicted to churn.
+## License 
+This project is licensed under the MIT License - see the LICENSE file for details.
+## Contact
+For any inquiries or feedback, feel free to reach out via Alirajhabib@gmail.com
